@@ -7,8 +7,15 @@
     "client": "mysql"
   },
   "mail": {
-    "transport": "Direct"
-  },
+    "transport": "SMTP",
+    "options": {
+      "service": "TTPostal",
+      "host": "postal.bright-nerds.com",
+      "port": 25,
+      "auth": {
+      }
+    }
+  },  
   "logging": {
     "transports": [
       "stdout"
